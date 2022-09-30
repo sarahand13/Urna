@@ -1,0 +1,26 @@
+Var
+// Seção de Declarações das variáveis 
+num: vetor [0..3] de inteiro
+votos, i, j, cont1, cont2: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+ repita
+ escreval ("leia o nº do candidato")
+ leia (num[i])
+ i <- i + 1
+ votos <- votos + 1
+ limpatela
+ até votos = 4
+ escreval ("fim da sessão")
+ para j de 0 até 3 faca
+ se num [j] = 13 entao
+ cont1 <- cont1 + 1
+ fimse
+ se num[j] = 22 entao
+ cont2 <- cont2 + 1
+ fimse
+ fimpara
+ escreval ("votos para 13:", cont1)
+ escreval ("votos para 22:", cont2)
+Fimalgoritmo
